@@ -1,5 +1,5 @@
 # potential-happiness
-## sber tasks
+## db
 
 ![db](https://github.com/mixae1/potential-happiness/assets/56720762/96a271fb-8e56-4797-95d8-85720eef5d30)
 
