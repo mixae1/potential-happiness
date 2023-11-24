@@ -112,7 +112,8 @@ i.	Отчет о текущем состоянии автопарка: скол�
 exec findCar(type => 'sedan');
   ```
 
-![db](https://github.com/mixae1/potential-happiness/assets/56720762/f3e624b3-0e58-4774-b827-5cfa67b9aecb)
+![db](https://github.com/mixae1/potential-happiness/assets/56720762/621706dc-be9f-42a1-abae-32eacaa1a127)
+
 
 ## virual box
 
