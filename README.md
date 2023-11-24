@@ -109,7 +109,7 @@ exec autopark_status;
   ```
 i.	Отчет о текущем состоянии автопарка: сколько в аренде, сколько свободны, сколько на ТО и т.д.
   ```sql
---exec findCar(type => 'sedan');
+exec findCar(type => 'sedan');
   ```
 
 ![db](https://github.com/mixae1/potential-happiness/assets/56720762/f3e624b3-0e58-4774-b827-5cfa67b9aecb)
