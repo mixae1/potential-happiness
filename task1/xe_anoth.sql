@@ -62,8 +62,8 @@ create table orders_history(
 ) pctfree 2;
 
 create index ind_orders_history_status on orders_history(status);
-create index ind_orders_history_car on orders_history(client_pass);
-create index ind_orders_history_client on orders_history(car_reg_num);
+create index ind_orders_history_client on orders_history(client_pass);
+create index ind_orders_history_car on orders_history(car_reg_num);
 
 create SEQUENCE seq_orders_history
     minvalue 1
@@ -907,7 +907,7 @@ begin
     from orders_history
     where status = '1' and returned_at between start_ts and end_ts;
 
-    dbms_output.put_line('����� �� ' || substr(start_ts, 1, 17) || ' - ' || substr(end_ts, 1, 17) || ': ' || revenue || '�');
+    dbms_output.put_line('Fin report for ' || substr(start_ts, 1, 17) || ' - ' || substr(end_ts, 1, 17) || ': ' || revenue || ' P');
 end;
 /
 
@@ -938,8 +938,8 @@ begin
     loop
         fetch c1 into car_list, pass, revenue;
         exit when c1%notfound;
-        dbms_output.put_line('������: ' || pass || ', ������: ' || car_list);
-        dbms_output.put_line('  �������: ' || revenue);
+        dbms_output.put_line('Client: ' || pass || ', used cars: ' || car_list);
+        dbms_output.put_line('  Revenue: ' || revenue);
     end loop;
     close c1;
 end;
@@ -1000,7 +1000,7 @@ begin
                         c_car.color || ', ' || 
                         c_car.type || ', ' || 
                         c_car.mark || ' - ' || 
-                        c_car.price || '�');
+                        c_car.price || 'P');
     end loop;
     close c_cars;
 end;
